@@ -10,3 +10,7 @@ body {
 div.initially-hidden {
   display: none;
 }
+
+@media screen and (min-width: 961px) {
+
+}
