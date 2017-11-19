@@ -12,5 +12,13 @@ div.initially-hidden {
 }
 
 @media screen and (min-width: 961px) {
+  h1,
+  h2,
+  ul {
+    text-align: center;
+  }
 
+  ul {
+    list-style-type: none;
+  }
 }
