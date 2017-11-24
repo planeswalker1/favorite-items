@@ -15,6 +15,11 @@ $('form#form').submit(function(event) {
     console.log('specific favorite item: ' + favoriteItems[i]);
     specificFavoriteItems.push(favoriteItems[i]);
   }
+  // for loop to append list items to initially-hidden ul
+  for (let i = 0; i < specificFavoriteItems.length; i++) {
+    let listItem = $('<li></li>').text('' + specificFavoriteItems[i] + '');
+    $('.favorite-items ul').append(listItem);
+  }
   $('div.initially-hidden').slideDown();
   console.log(favoriteItems);
   console.log(specificFavoriteItems);
