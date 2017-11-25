@@ -5,6 +5,13 @@ let specificFavoriteItems = [];
 // Everything below this line is user interface (or front-end) logic
 $('form#form').submit(function(event) {
   event.preventDefault();
+  if (favoriteItems.length !== 0) {
+    //empty array if we already submitted
+    favoriteItems.length = 0;
+    specificFavoriteItems.length = 0;
+    // empty ul if we already submitted
+    $('div.initially-hidden ul').empty();
+  }
   // for loop to create favoriteItems array
   for (let i = 1; i < 6; i++) {
     let favoriteItem = $('input#item' + [i]).val();
