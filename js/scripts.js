@@ -31,3 +31,7 @@ $('form#form').submit(function(event) {
   console.log(favoriteItems);
   console.log(specificFavoriteItems);
 });
+
+$('input').focus(function() {
+  $('div.initially-hidden').slideUp();
+});
